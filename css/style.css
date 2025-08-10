@@ -1,0 +1,478 @@
+@import url("http://fonts.googleapis.com/css?family=Open Sans:300,400,700");
+@import url(font-awesome.min.css);
+@import url(bootstrap.min.css);
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+p {
+    font-weight: normal;
+    line-height: 1.5;
+    /* margin-bottom: 1.5rem; */
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+article {
+    margin: 40px 0;
+}
+
+.template-page-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+
+
+
+
+/*******************************/
+/*           NAVLIST           */
+/*******************************/
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 10px 15px;
+}
+
+
+
+
+
+
+
+.templatemo-content-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.templatemo-content {
+    margin-left: 235px;
+    margin-top: 0px;
+    min-height: 600px;
+    padding: 25px 20px 0 20px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.footer {
+    clear: both;
+    font-size: 13px;
+    padding: 8px 0 5px 0;
+    text-align: center;
+    color: #ccc;
+    background: linear-gradient(90deg, #001933 10%, #0A76A9 90%);
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+
+/*******************************/
+/*            NAVBAR           */
+/*******************************/
+#templatemo_search_box {
+    width: 150px;
+    display: inline-block;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 0;
+    background: linear-gradient(90deg, #001933 10%, #0A76A9 90%);
+    min-height: 70px;
+}
+
+.navbar-header {
+    color: rgb(127, 127, 127);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    background: linear-gradient(90deg, #ebebeb 10%, #fff 90%);
+    border: 1px solid #fff;
+}
+
+.templatemo-sidebar {
+    padding: 0;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu>li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu>li>a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.templatemo-sidebar-menu a {
+    color: black;
+}
+
+.templatemo-sidebar-menu a:hover {
+    text-decoration: none;
+}
+
+.templatemo-sidebar-menu li.sub .templatemo-submenu {
+    display: none;
+}
+
+.templatemo-sidebar-menu li.sub.open .templatemo-submenu {
+    display: block;
+}
+
+.templatemo-submenu {
+    padding-left: 0;
+}
+
+.templatemo-submenu li {
+    list-style: none;
+    background-color: #dfdfdf;
+}
+
+.templatemo-submenu li a {
+    display: block;
+    padding: 20px 15px;
+    margin: 0;
+}
+
+.templatemo-sidebar-menu>li.sub.open>a {
+    background-color: rgba(145, 145, 145, 0.3);
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu>li.active,
+.templatemo-sidebar .templatemo-sidebar-menu>li>a:hover {
+    background-color: #0A76A9;
+    color: #fff;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu>li>a>i {
+    font-size: 16px;
+    top: 2px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+.active a {
+    color: #fff;
+}
+
+
+/*******************************/
+/*            CHARTS           */
+/*******************************/
+.templatemo-chart-box {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px 30px 0;
+}
+
+/* 5. Preferences Form
+------------------------------------------*/
+#templatemo-preferences-form {
+    max-width: 960px;
+    margin-bottom: 30px;
+}
+
+
+
+/*******************************/
+/*            TABLE            */
+/*******************************/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table, thead {
+    border: 2px solid #0A76A9;
+}
+
+thead {
+    background: #0A76A9;
+    color: white;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #0A76A9;
+}
+
+/* 8. Bootstrap overrides
+----------------------------------------------*/
+.nav-pills>li>a,
+.nav-tabs>li>a,
+.alert,
+.progress,
+.panel,
+.btn,
+.panel-group .panel,
+.form-control,
+.modal-content,
+.breadcrumb {
+    border-radius: 0;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.list-group h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #0A76A9;
+}
+
+.list-group-item img {
+    width: 100%;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #0A76A9;
+    border-color: #0A76A9;
+}
+
+.list-group-item:first-child,
+.panel-heading {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item-text {
+    line-height: 1.3;
+    margin-left: 1.5rem;
+}
+
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form-control-feedback {
+    right: 15px;
+}
+
+/* 9. Maps
+------------------------------------------------------*/
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+    width: 15px;
+    height: 15px;
+}
+
+.vmap {
+    height: 400px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .templatemo-sidebar {
+        width: 235px;
+        float: left;
+        position: relative;
+        margin-right: -100%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-form {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .templatemo-sidebar {
+        border-top: 0 !important;
+        margin: 20px;
+    }
+
+    .templatemo-sidebar.navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .templatemo-sidebar.navbar-collapse.in {
+        border-top: 0 !important;
+        margin: 20px;
+        position: relative;
+        overflow: hidden !important;
+        overflow-y: auto !important;
+        display: block !important;
+    }
+
+    .templatemo-content-wrapper {
+        float: none;
+    }
+
+    .templatemo-content {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .templatemo-chart-box {
+        padding-right: 0;
+    }
+}
+
