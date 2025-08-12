@@ -4,11 +4,14 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
 }
 
 body {
     background-color: rgb(235, 235, 235);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
 }
 
 html {
@@ -50,7 +53,7 @@ h6 {
 p {
     font-weight: normal;
     line-height: 1.5;
-    /* margin-bottom: 1.5rem; */
+    margin: 0 0 10px;
 }
 
 a {
@@ -89,7 +92,13 @@ h6 {
 }
 
 article {
-    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article img {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .template-page-wrapper {
@@ -98,9 +107,42 @@ article {
     margin-top: 4rem;
 }
 
+.after::after {
+    content: "";
+    display: block;
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+}
 
 
 
+
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
 
 /*******************************/
 /*           NAVLIST           */
@@ -111,17 +153,26 @@ article {
 }
 
 .logo {
-    display: inline-block;
+    display: flex;
+}
+
+.logo img {
+    width: 50px;
 }
 
 .logo h1 {
     font-size: 24px;
     margin: 10px 15px;
+    color: #fff;
 }
 
 
 
-
+summary {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
 
 
 
@@ -176,18 +227,92 @@ article {
 }
 
 .navbar-header {
+    display: flex;
+    align-items: center;
     color: rgb(127, 127, 127);
     width: 80%;
     margin: 0 auto;
 }
 
 .navbar-collapse {
+    display: block;
     background: linear-gradient(90deg, #ebebeb 10%, #fff 90%);
     border: 1px solid #fff;
+    padding: 0;
 }
 
-.templatemo-sidebar {
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: white;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-collapse.active {
+    display: block;
+}
+
+/* Tlačítko hamburgeru */
+.navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+}
+
+.navbar-toggle {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Animace na "aktivní" stav - křížek */
+.navbar-toggle.active .bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active .bar2 {
+    opacity: 0;
+}
+
+.navbar-toggle.active .bar3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+
+.templatemo-sidebar-menu .active a {
+    color: #fff;
 }
 
 .templatemo-sidebar .templatemo-sidebar-menu {
@@ -266,9 +391,6 @@ article {
     text-align: center;
 }
 
-.active a {
-    color: #fff;
-}
 
 
 /*******************************/
@@ -317,6 +439,9 @@ td {
     padding: 10px;
     border: 1px solid #0A76A9;
 }
+
+
+
 
 /* 8. Bootstrap overrides
 ----------------------------------------------*/
@@ -382,25 +507,14 @@ td {
 }
 
 .list-group-item-heading {
-  margin-top: 0;
-  margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .form-control-feedback {
     right: 15px;
 }
 
-/* 9. Maps
-------------------------------------------------------*/
-.jqvmap-zoomin,
-.jqvmap-zoomout {
-    width: 15px;
-    height: 15px;
-}
-
-.vmap {
-    height: 400px;
-}
 
 
 
@@ -408,8 +522,14 @@ td {
 
 
 
-@media screen and (min-width: 992px) {
-    .templatemo-sidebar {
+
+
+
+
+
+
+@media screen and (min-width: 991.99px) {
+    .navbar-collapse {
         width: 235px;
         float: left;
         position: relative;
@@ -421,29 +541,30 @@ td {
         float: left;
     }
 
+    .navbar-toggle {
+        display: none;
+    }
+
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
     .navbar-form {
         padding: 0;
         margin-left: 0;
     }
 
     .navbar-header {
-        float: none;
+        width: 90%;
+        justify-content: space-between;
     }
 
     .navbar-toggle {
         display: block;
     }
 
-    .templatemo-sidebar {
+    .navbar-collapse {
         border-top: 0 !important;
         margin: 20px;
-    }
-
-    .templatemo-sidebar.navbar-collapse.collapse {
-        display: none !important;
     }
 
     .templatemo-sidebar.navbar-collapse.in {
@@ -462,17 +583,30 @@ td {
     .templatemo-content {
         margin: 0;
     }
+
+    .navbar-collapse {
+        background: #fff;
+        display: none;
+    }
+
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 767.99px) {
     .navbar-header {
         float: left;
     }
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     .templatemo-chart-box {
         padding-right: 0;
     }
+
+    .template-page-wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+
 }
 
